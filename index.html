@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just For You</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+
+    <img src="media/h1.png" class="logo-img">
+    <a href="#" class="logo">Just For You<span>.</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></a>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about2">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#others">Others</a>
+    </nav>
+
+  </header>
+
+  <section class="home" id="home">
+  </section>
+
+  <!-- intro section -->
+  <section class="intro" id="intro">
+    <div class="max-width">
+      <div class="intro-content">
+        <div class="column left">
+          <img src="media/hiro3.jpg" alt="">
+        </div>
+        <div class="column right">
+          <h2 class="title1">Hi, Pogi!</h2>
+          <h2 class="semi-title">Yie pogi yarn haha</h2>
+          <br><br>
+          <p>Hello pogi! Hahahaha. Ang pogi mo jan sa picture mo na yan. Pogi ka naman sa lahat ng picture mooo ^^ Smile ka muna hahaha. Happy Valentine's Dayyy pogiii :> Ito na lang gift ko sayo website hahaha. Kaso baka yung ibang text or pictures dito sa site nakalihis yung landas haha kasi magkaiba size ng phone/laptop natin e. Kaya tinanong ko kung ano size ng laptop niyo kasi mas maganda sa laptop mo iopen to hehe pero pwede rin sa phone basta sa chrome mo iopen hehe. Sana po magustuhan mo pogiii :> Scroll ka naaaa hahahahaha ang corny ko BWHAHAHAHAHA basta hindi naman madrama tong website na ginawa ko kasi baka umiyak ka pa charot hahahhaha scroll kanaaaa boyski. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section class="about">
+  <div class="moveall">
+    <h1 class="heading"> <span></span></div> </h1>
+
+    <div class="content1">
+      <div class="content2">
+      <div class="move">
+
+      <div class="right-col">
+        <p>You Right - Doja Cat, The Weeknd</p>
+        <img src="media/play.png" id="icon">
+      </div>
+      <div class="right-col2">
+        <p>Plastic Love - 竹内 まりや</p>
+        <img src="media/play.png" id="icon2">
+      </div>
+      <div class="right-col3">
+        <p>Sa Susunod Na Lang - Skusta Clee</p>
+        <img src="media/play.png" id="icon3">
+      </div>
+      <div class="right-col4">
+        <p>Moonlight - Dhruv</p>
+        <img src="media/play.png" id="icon4">
+      </div>
+      <div class="right-col5">
+        <p>Superficial Love - Ruth B.</p>
+        <img src="media/play.png" id="icon5">
+      </div>
+
+      </div>
+      </div>
+    </div>
+
+    
+  <audio id="mySong">
+    <source src="media/youright.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong2">
+    <source src="media/plasticlove.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong3">
+    <source src="media/sasusunodnalang.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong4">
+    <source src="media/moonlight.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong5">
+    <source src="media/superficiallove.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    var mySong2 = document.getElementById("mySong2");
+    var icon2 = document.getElementById("icon2");
+
+    var mySong3 = document.getElementById("mySong3");
+    var icon3 = document.getElementById("icon3");
+
+    var mySong4 = document.getElementById("mySong4");
+    var icon4 = document.getElementById("icon4");
+
+    var mySong5 = document.getElementById("mySong5");
+    var icon5 = document.getElementById("icon5");
+
+    icon.onclick = function(){
+      if(mySong.paused){
+        mySong.play();
+        icon.src = "media/pause.png";
+      }else{
+        mySong.pause();
+        icon.src = "media/play.png";
+      }
+    }
+    icon2.onclick = function(){
+      if(mySong2.paused){
+        mySong2.play();
+        icon2.src = "media/pause.png";
+      }else{
+        mySong2.pause();
+        icon2.src = "media/play.png";
+      }
+    }
+    icon3.onclick = function(){
+      if(mySong3.paused){
+        mySong3.play();
+        icon3.src = "media/pause.png";
+      }else{
+        mySong3.pause();
+        icon3.src = "media/play.png";
+      }
+    }
+    icon4.onclick = function(){
+      if(mySong4.paused){
+        mySong4.play();
+        icon4.src = "media/pause.png";
+      }else{
+        mySong4.pause();
+        icon4.src = "media/play.png";
+      }
+    }
+
+    icon5.onclick = function(){
+      if(mySong5.paused){
+        mySong5.play();
+        icon5.src = "media/pause.png";
+      }else{
+        mySong5.pause();
+        icon5.src = "media/play.png";
+      }
+    }
+  </script>
+
+<div class="row">
+
+  <div class="video-container">
+  </div>
+
+  <div class="content">
+      <p>May pa-music pa dahil special kaaaa HAHAHAHAHA. Mas maganda kung may background music para mas enjoyyyy hahahaha kaya pumili ka muna ng song na gusto moooo. <br><br> Click mo lang yung play na logo sa tabi ng song na napili mo. Mag auto play na 'yan. Kapag papalitan mo naman, click mo muna ulit yung logo ng song na naka-play na para mag pause tapos click mo yung logo ng song na ipapalit mo. </p>
+      <p class="comment">(Diba tinanong kita kung ano yung favorite songs mo? Ito na 'yun HAHAHAHAHAHAHAHAHA. Para dito po talaga 'yun :> Pwede pa palitan yung song na nandyan kung gusto mo. Set ka lang po ng appointment para makausap mo si Ms. Tano at mapalitan yung song. Charot hahahaha) </p>
+      <p class="par">Kapag nakapili ka na po at nag play na yung song, scroll down lang poooo. :> </p>
+  </div>
+
+</div>
+</div>
+  </section>
+
+  <section class="events">
+    <div class="title">
+      <div class="line1"></div>
+      <h1><br><br>あなたのポギ :)</h1>
+      <p>(Di mo po naintindihan? hahaha translate mo na lang sa google kung ano ibig sabihin niyan :>)</p>
+    </div>
+    <div class="row2">
+      <div class="col">
+        <img src="media/hiro1.jpg" alt="">
+        <h4>POGI #1</h4>
+        <p>Kinuha ko sa fb mo hahahaha pogi nyan e :> san ka po punta? haha</p>
+      </div>
+      <div class="col">
+        <img src="media/hiro2.jpg" alt="">
+        <h4>POGI #2</h4>
+        <p>Sinend mo sakin nung Feb 6 sabi mo matutulog ka hahaha matutulog na pogi gigising na pogi pa rin yie.</p>
+      </div>
+      <div class="col">
+        <img src="media/hiro4.jpg" alt="">
+        <h4>POGI #3</h4>
+        <p>Sinend mo to nung nagopen ako sayo sabi ko malungkot ako hahaha kamsahamnidaaa pogi ka parin kahit laki ng nguso mo jan hahaha</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore">
+    <div class="explore-content">
+    <h1>NAKAKAINLAB NAMAN PO</h1>
+    <div class="line2"></div>
+    <p>"Ako lang to" - Irish/Hiro. <br> Ang cute mo talaga sa picture na yan hahaha lumiit yung pes moooo :> kinuha ko rin yan sa fb mo hahaha belated happy birthdayyyy hahahaha parang model ka jaan :> kaso sa laptop baka hindi kita yung mukha mo kasi nacrop, sa phone mo iopen makikita yan buo :>
+    </p>
+    </div>
+  </section>
+
+  <section class="tours">
+    <div class="row2">
+      <div class="col content-col">
+      <h1>HELLO, I'M MICUUUU!</h1>
+      <div class="line2"></div>
+      <p>Hello Ayish and Everyone! Welcome to my site! My name is Micu. How are you po? Pose lang ako dito :> Salamat po sa photographer ko.<br> <br>HAHAHAHAHA yan yung humingi ako sayo ng picture ni micuuu sabi ko for educational purposes lang hahaha dito ko talaga ilalagay :> Ganda pose ni micu jan ^^ may tulog pa hahahha</p>
+      </div>
+      <div class="col image-col">
+        <div class="image-gallery">
+          <img src="media/micu1.jpg" alt="">
+          <img src="media/micu2.jpg" alt="">
+          <img src="media/micu3.jpg" alt="">
+          <img src="media/micu4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About2 -->
+  <div class="line3"></div>
+  <section id="about2">
+    <div class="about2 container">
+      <div class="colleft2">
+        <div class="about2-img">
+          <img src="media/cute.gif" alt="img">
+        </div>
+      </div>
+      <div class="colright2">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>(Inoy)</h2>
+        <p>Hello ulit pogiii! hahaha sana nag enjoy kaaa habang nagpe-play yung music. Konti lang yung nalagay ko e. Ginawa ko to since February 4 hanggang ngayon February 14 hahahaha. Kinulang din talaga ako sa oras pero natapos ko naman yeyyyy! Ito talaga naisip ko kasi sabi ko sayo gagawan kita website hahahaha. Sayo na to kasi para sayo naman talaga to :> Save mo na lang yung link nito hehe. Thank you po boyski. Always mo kong napapasayaaa :>. Napapasaya mo po ako kahit sa maliliit na bagay :> kaya sana napasaya rin kita dito kahit ito lang :> Ito na lang po muna saka na tayo mag jabiiii hahaha nood na lang tayo mamaya movieeee :> Tingnan mo yung gif ako yung white :> you're so special po to me :>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="line4"></div>
+  <section id="contact">
+    <div class="contact container">
+      <div class="colleft3">
+        <div class="contact-img">
+          <br><br>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931.9976621522128!2d120.87911360805782!3d14.427432947478236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962d24dada20ed%3A0xb9474dde45d7d688!2sPoblacion%2C%20Noveleta%2C%20Cavite!5e0!3m2!1sen!2sph!4v1644827096977!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="colright3">
+        <h1 class="section-title1">Contact <span>me</span></h1>
+        <h2>(Contact me po if you need me :> hahaha)</h2>
+        <p>Ito po number ko 09123645716 at 09994675969. Save mo na yan pogi hahahaha pwede mo rin ako imessage sa messenger "Genina Reyes Tano" yan po name ko baka di mo po alam HAHAHAHAHAHAHAHAHA. Pwede mo rin ako imessage sa ML "y n a" yan name ko dun search mo na lang hahahaha. <br> <br>
+        Ito naman naglagay na ako ng mapa para alam mo kung saan ako nakatira BWAHAHAHAHAHAHA "2920 San Miguel St. Poblacion Noveleta, Cavite" yan po address ko hahahaha. Click mo na lang yung mapa sa baba hahahaha.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>Sana nagustuhan mo poooo at sana napasaya kita kahit puro ako "HAHAHAHA" kasi nakangiti talaga ako habang tinatype to HAHAHAHA babyeeee.</p> 
+    <p>Saranghaeeee :P</p>
+  </section>
+
+  
+
+</body>
+</html>
